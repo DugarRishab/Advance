@@ -1,0 +1,1142 @@
+<html>
+
+<head>
+    <!--link rel="stylesheet" href="/jeestyle.css">
+        <--script
+                src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script-->
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body class="body- s-font flex-column">
+    <div class="body" id="body">
+        <div id="menu-side" class="menu-side">
+            <button class="mode-btn">Dark</button>
+            
+        </div>
+        <div id="menu-btn" class="menu-btn">
+            <div class="hamburger-menu">
+                <div id="line1" class="hamburger-menu-lines underline-l-to-r"></div>
+                <div id="line2" class="hamburger-menu-lines underline-l-to-r"></div>
+                <div id="line3" class="hamburger-menu-lines underline-l-to-r"></div>
+            </div>
+        </div>
+        <div id="title" class="container text-light text-center">
+            <h class="title">ADVANCE</h>
+        </div>
+        <div class="tab container text-light justify-content-around">
+            <a id="phy-btn" data-tab-target="phy-content" class="btn-dark header slide-btn slide-btn-sel"
+                type="radio">PHYSICS</a>
+            <a id="chem-btn" data-tab-target="chem-content" class="btn-dark header slide-btn" type="radio">CHEMISTRY</a>
+            <a id="math-btn" data-tab-target="math-content" class="btn-dark header slide-btn"
+                type="radio">MATHEMATICS</a>
+        </div>
+
+        <div id="phy-content" class="container text-light align-start content-disable content-enable">
+            <div class=" text-light chapter sub-header">General Physics
+                <div class="topic-color text" value=100%><a>Units and Dimension</a>
+
+                </div>
+                <div class="topic-color text" value=50%><a>Measurements and Error Analysis</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Vernier Callipers and Screw Gauge</a>
+
+                </div>
+            </div>
+
+            <div class=" text-light block chapter sub-header">Mechanics
+                <div class="topic-color text" value=0%><a>Kinematics</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Newton's Laws of Motion</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Work Power Energy</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Center of Mass</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Collisions</a>
+
+                </div>
+                <div class="topic-color text" value=20%><a>Rotational Dynamics</a>
+
+                </div>
+            </div>
+
+            <div class=" text-light block chapter sub-header">Gravitation
+                <div class="topic-color text" value=0%><a>Laws of Gravitation</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Acceleration due to Gravity</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Motion of Planets and Sattelites</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Escape Velocity</a>
+
+                </div>
+            </div>
+
+            <div class=" text-light block chapter sub-header">Waves and Oscillations
+                <div class="topic-color text" value=0%><a>Simple Harmonic Motion</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Longitudinal Waves</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Transverse Waves</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Vibrations</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Oscilations</a>
+
+                </div>
+            </div>
+
+            <div class=" text-light block chapter sub-header">Thermal Physics
+                <div class="topic-color text" value=0%><a>Thermanl Expansion</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Calorimetry</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Heat Transfer</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Radiation and Black Body</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Kinetic Theory of gases</a>
+
+                </div>
+            </div>
+
+            <div class=" text-light block chapter sub-header">States of Matter
+                <div class="topic-color text" value=0%><a>Mechanical Properties Of Solids</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Elasticity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Mechanical Properties of Fluids</a>
+                    <button id="plus-btn" class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Fluid Pressure</a></div>
+                        <div class="topic-color text" value=0%><a>Surface Tension</a></div>
+                        <div class="topic-color text" value=0%><a>Viscosity</a></div>
+                        <div class="topic-color text" value=0%><a>Equation of Continuity</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Electricity and Magnetism
+                <div class="topic-color text" value=0%><a>Electrostats</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Capacitance</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Electric Current</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Magnetic Effect of Electric Current</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Magnetism</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Electro Magnetic Induction</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Alternating Current</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>LCR Circuits in AC & DC </a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Optics
+                <div class="topic-color text" value=0%><a>Reflection</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Refraction</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Spherical Surface</a></div>
+                        <div class="topic-color text" value=0%><a>Lens</a></div>
+                        <div class="topic-color text" value=0%><a>Prisms</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Wave Optics</a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Modern Physics
+                <div class="topic-color text" value=0%><a>Atomic Structure</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Dual Nature of Matter</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Photoelectric Effect</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Radioactivity</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>X-Rays</a>
+
+                </div>
+            </div>
+        </div>
+        <div id="chem-content" class="container  text-light align-start content-disable">
+            <div class=" text-light block chapter sub-header">Physical Chemistry
+                <div class="topic-color text" value=0%><a>General Chemistry</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Mole Concept</a></div>
+                        <div class="topic-color text" value=0%><a>Redox reactions</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Gaseous State</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Ideal Gas Equations</a></div>
+                        <div class="topic-color text" value=0%><a>Real Gases</a></div>
+                        <div class="topic-color text" value=0%><a>Kinetic Theory of Gases</a></div>
+                        <div class="topic-color text" value=0%><a>Diffusion of Gases</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Atomic Structure</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Bohr's Model</a></div>
+                        <div class="topic-color text" value=0%><a>Spectrum of H-atom</a></div>
+                        <div class="topic-color text" value=0%><a>heisenberg Uncertinity Principle</a></div>
+                        <div class="topic-color text" value=0%><a>Photoelectric Effect</a></div>
+                        <div class="topic-color text" value=0%><a>Schrondiger Equation</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Thermodynamics and Thermochemistry</a>
+                </div>
+                <div class="topic-color text" value=0%><a>Chemical and Ionic Equllibrium</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Equilibrium Constant</a></div>
+                        <div class="topic-color text" value=0%><a>Le Chateilier's Principle</a></div>
+                        <div class="topic-color text" value=0%><a>Solubility Product</a></div>
+                        <div class="topic-color text" value=0%><a>Common Ion Effect</a></div>
+                        <div class="topic-color text" value=0%><a>Acid, Bases and Salts</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>ElectroChemistry</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Solid State</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Chemical Kinetics</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Solutions</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Surface Chemistry</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Nuclear Chemistry</a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Inorganic Chemistry
+                <div class="topic-color text" value=0%><a>Chemical Bonding</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>s, p, d, f orbitals</a></div>
+                        <div class="topic-color text" value=0%><a>Different principles regarding to Chemical bonding</a>
+                        </div>
+                        <div class="topic-color text" value=0%><a>Hybridisation</a></div>
+                        <div class="topic-color text" value=0%><a>VSEPR Theory</a></div>
+                        <div class="topic-color text" value=0%><a>Molecular Orbital Theory</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>s-block Elements</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Properties</a></div>
+                        <div class="topic-color text" value=0%><a>Allotropes of C, S, P</a></div>
+                        <div class="topic-color text" value=0%><a>Compounds and Reactions</a></div>
+                    </div>
+
+                </div>
+                <div class="topic-color text" value=0%><a>p-Block Elements</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Properties</a></div>
+                        <div class="topic-color text" value=0%><a>Compounds and Reactions</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>d-Block Elements (3-d series)</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>General Characteristics and Oxidation States</a></div>
+                        <div class="topic-color text" value=0%><a>Color</a></div>
+                        <div class="topic-color text" value=0%><a>Spin-only Magnetic Moment</a></div>
+                        <div class="topic-color text" value=0%><a>Oxides of fe, Cu, Zn, Sn, Pb, Ag only</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Coordination Compounds</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Nomenclature (mono-nuclear coordination compounds
+                                only)</a></div>
+                        <div class="topic-color text" value=0%><a>cis-trans, ionisation Isomerism</a></div>
+                        <div class="topic-color text" value=0%><a>Hybridisation and Geometry</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Metalurgy</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Ores and Minerals</a></div>
+                        <div class="topic-color text" value=0%><a>Extraction Of Metals</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Qualitative Analysis</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Groups I to V (only Ag+
+                                , Hg2+, Cu2+, Pb2+, Bi3+, Fe3+, Cr3+, Al3+, Ca2+, Ba2+, Zn2+, Mn2+
+                                and Mg2+);</a></div>
+                        <div class="topic-color text" value=0%><a>Nitrate, halides (excluding fluoride), sulphate and
+                                sulphide.</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Organic Chemistry
+                <div class="topic-color text" value=0%><a>Basic Orgaic Chemistry</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Nomeclature</a></div>
+                        <div class="topic-color text" value=0%><a>Isomerism</a></div>
+                        <div class="topic-color text" value=0%><a>Resonance and Hyperjunction</a></div>
+                        <div class="topic-color text" value=0%><a>Acidity and Basicity of Organic Compounds</a></div>
+                        <div class="topic-color text" value=0%><a>Basic Types of Reaction Mechanisms</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Hydrocarbons</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Alkanes(Preparations, properties and Reactions)</a>
+                        </div>
+                        <div class="topic-color text" value=0%><a>Alkenes(Preparations, properties and Reactions)</a>
+                        </div>
+                        <div class="topic-color text" value=0%><a>Alkynes(Preparations, properties and Reactions)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Alkyl Halides</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>(Preparations, properties and Reactions)</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Alcohols and Ether</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>(Preparations, properties and Reactions)</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Aldehyde and Ketones</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>(Preparations, properties and Reactions)</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Carboxylic Acids and Derivatives</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>(Preparations, properties and Reactions)</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Aromatic Compounds</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Benzene(Preparations, properties and Reactions)</a>
+                        </div>
+                        <div class="topic-color text" value=0%><a>Phenols(Preparations, properties and Reactions)</a>
+                        </div>
+                        <div class="topic-color text" value=0%><a>Armoatic Compounds containing Nitrogen</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Biomolecules</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Carbohydrates</a></div>
+                        <div class="topic-color text" value=0%><a>Amino Acids and Peptides</a></div>
+                    </div>
+                </div>
+                <div class="topic-color text" value=0%><a>Polymers</a>
+                    <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                    <div class="drop-down">
+                        <div class="topic-color text" value=0%><a>Properties and Uses of- Natural rubber, cellulose,
+                                nylon,
+                                teflon and PVC.</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Physical Organic Chemistry
+                <button class="float-right plus-btn text" onclick=dropdownactive(this)>+</button>
+                <div class="drop-down">
+                    <div class="topic-color text" value=0%><a>Detection of elements (N, S, halogens)</a></div>
+                    <div class="topic-color text" value=0%><a>Detection and identification of the following
+                            functional groups: hydroxyl (alcoholic and phenolic), carbonyl (aldehyde and ketone),
+                            carboxyl, amino and nitro</a></div>
+                    <div class="topic-color text" value=0%><a>Chemical methods of separation of mono-functional organic
+                            compounds from binary mixtures.</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="math-content" class="container text-light align-start content-disable">
+            <div class=" text-light block chapter sub-header">ALgebra
+                <div class="topic-color text" value=0%><a>Sequence and Series</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Arithmatic, Geometric, Harmonic Progressions</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Quadratic Equations</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Logarithms</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Complex Numbers</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Matrices and Determinants</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Permutations and Combinations</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Probabitlity</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Binomial Theorm</a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Trignometry
+                <div class="topic-color text" value=0%><a>Solutions Of Triangles</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Compound Angles</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Trignometric Functions</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Inverse Trignometric Functions</a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Analytical Geometry
+                <div class="topic-color text" value=0%><a>2-D Geometry</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Circles</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Parabolas</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Ellipse</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Hyperbola</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>3-D Geometry</a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Calculus
+                <div class="topic-color text" value=0%><a>Functions</a>
+
+                </div>
+                <div class="topic-color text" value=20%><a>Limits</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Continuity and Diffrentiability</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Diffrentiation</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Diffrential Equations</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Application of Derivatives</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Indefinate Integration</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Definate Integrations</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Area Under Curve</a>
+
+                </div>
+            </div>
+            <div class=" text-light block chapter sub-header">Vectors
+                <div class="topic-color text" value=0%><a>Addition</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Scalar Multiplication</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Cross Product</a>
+
+                </div>
+                <div class="topic-color text" value=0%><a>Geometrical Interpretations</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<style>
+    .body {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: -00%;
+        transition: all 2s;
+        transition-timing-function: cubic-bezier(0.47, 0.1, 0.1, 1.1);
+        background: linear-gradient(-15deg, rgba(255, 94, 0), rgba(255, 0, 191, 0.456), rgb(63, 0, 180));
+        ;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .s-font {
+        font-family: ivymode, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-light {
+        color: rgb(255, 255, 255);
+    }
+
+    .transition {
+        transition: all 1s;
+    }
+
+    .menu-btn {
+        background-color: rgba(28, 226, 216, 0);
+        position: fixed;
+        height: 25px;
+        width: 35px;
+        top: 30px;
+        right: calc(6.5vw - 0px);
+        z-index: 5;
+        transition: 0.5s ease-in-out;
+    }
+
+    #line1,
+    #line2,
+    #line3 {
+        transition: 0.5s ease-in-out;
+        opacity: 100%;
+    }
+
+    .menu-btn-onclick #line1 {
+        transform: rotateZ(45deg) translateY(8px);
+
+        background: linear-gradient(-15deg, rgba(255, 94, 0), rgba(255, 0, 191, 0.456), rgb(63, 0, 180));
+        transition: 0.5s ease-in-out;
+    }
+
+    .menu-btn-onclick #line3 {
+        transform: rotate(-45deg) translateY(-10px) translateX(4px);
+        background: linear-gradient(-15deg, rgba(255, 94, 0), rgba(255, 0, 191, 0.456), rgb(63, 0, 180));
+        transition: 0.5s ease-in-out;
+
+    }
+
+    .menu-btn-onclick #line2 {
+        opacity: 0;
+
+        background: linear-gradient(-15deg, rgba(255, 94, 0), rgba(255, 0, 191, 0.456), rgb(63, 0, 180));
+        transition: 0.5s ease-in-out;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        height: 100%;
+    }
+
+    .hamburger-menu-lines {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 7px;
+    }
+
+    .hamburger-menu:hover .underline-l-to-r:before {
+        width: 100%;
+    }
+
+    .menu-side {
+        background: rgba(162, 245, 67, 0);
+        background: linear-gradient(-15deg, rgba(255, 94, 0, 0.473), rgba(255, 0, 191, 0.281), rgba(63, 0, 180, 0.493));
+        width: min(49vw, 743px);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -50vw;
+        z-index: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.692);
+        transition: 4s;
+        transition-timing-function: cubic-bezier(0.47, 0.1, 0.1, 1.1);
+    }
+
+    .menu-side-to-right {
+        right: min(4vw, 50px);
+        right: 0px;
+        transition: 2s ease-in-out;
+    }
+
+    .body {
+
+        transition-timing-function: cubic-bezier(0.47, 0.1, 0.1, 1.01);
+
+    }
+
+    .body-to-right {
+        left: -50%;
+        transition: 4s ease-in-out;
+    }
+
+    
+
+    .title {
+        font-size: 6vw;
+        font-weight: 100;
+        transition: all 1s;
+        margin-left: 15px;
+        text-shadow: -5px -5px 2px rgba(39, 39, 39, 0.349);
+    }
+
+    .header {
+        font-size: 2.1vw;
+        font-weight: 100;
+
+    }
+
+    .sub-header {
+        font-size: 2vw;
+        font-weight: 600;
+        transition: all 1s;
+    }
+
+    .text {
+        font-size: 1.5vw;
+        font-weight: 600;
+        transition: all 1s;
+    }
+
+    .bg-blur-dark {
+        background: rgba(0, 0, 0, 0.418);
+        backdrop-filter: blur(10px);
+        background-blend-mode: darken;
+        transition: all 1s;
+    }
+
+    .slide-btn {
+        text-decoration: none;
+        border-bottom: 0px solid whitesmoke;
+        border-bottom-left-radius: 0%;
+
+
+    }
+
+    .slide-btn-sel {
+        text-decoration: none;
+        border-bottom: 2px solid whitesmoke;
+        border-bottom-left-radius: 0%;
+        background: rgba(44, 1, 1, 0.726);
+    }
+
+    .container {
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+        font: ivymode;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: fit-content;
+        border-radius: 20px;
+    }
+
+    .tab {
+        position: sticky;
+        top: 10px;
+    }
+
+    .tab.container {
+        width: 90%;
+        display: flex;
+        background: rgba(29, 29, 29, 0.377);
+        justify-content: space-around;
+        text-shadow: -2px -2px 2px rgba(46, 1, 1, 0.349);
+        margin: auto;
+    }
+
+    .btn-dark {
+        background: rgba(128, 255, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .justify-content-around {
+        justify-content: space-around;
+    }
+
+    .justify-content-left {
+        justify-content: left;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .inline-block {
+        display: block;
+    }
+
+    .align-start {
+        align-items: flex-start;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    .topic-color {
+        background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgb(255, 208, 0, 0.5), rgb(12, 206, 12, 0.5));
+        background-size: 1000%;
+        background-position: 0%, 0;
+    }
+
+    .chapter {
+        background: rgba(255, 255, 255, 0.411);
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 60vw;
+        margin-left: 30vw;
+        margin-right: 30vw;
+        padding: 2%;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 1s;
+        box-shadow: -5px -5px 5px 0px rgba(43, 43, 43, 0.349);
+        text-shadow: -2px -2px 2px rgba(43, 43, 43, 0.349);
+    }
+
+    .chapter div {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 2%;
+        box-shadow: -5px -5px 5px 0px rgba(46, 1, 1, 0.349);
+        text-shadow: -2px -2px 2px rgba(46, 1, 1, 0.349);
+    }
+
+    .chapter .plus-btn {
+        background: none;
+        color: whitesmoke;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0)
+    }
+
+    .chapter .plus-btn:hover {
+        border: 1px solid white;
+
+    }
+
+    .content-disable {
+        display: none;
+    }
+
+    .content-enable {
+        display: block;
+    }
+
+    .about-me {
+        color: white;
+        text-align: left;
+        background-color: rgba(14, 14, 14, 0.938);
+        width: 100%;
+        margin-top: 50px;
+        border-top: 5px solid gray;
+
+    }
+
+    .drop-down {
+        height: 0;
+        background-color: rgba(0, 128, 0, 0);
+        overflow: hidden;
+        display: block;
+        transition: all 1s;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+        padding: 0;
+        transition: all 1s;
+    }
+
+    .drop-down-open {
+        height: fit-content;
+        background-color: rgba(0, 128, 0, 0);
+        overflow: hidden;
+        display: block;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+        padding: 0;
+        transition: all 1s;
+    }
+
+    .chapter div .drop-down div {
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 2%;
+        box-shadow: -5px -5px 5px 0px rgba(46, 1, 1, 0.349);
+        text-shadow: -2px -2px 2px rgba(46, 1, 1, 0.349);
+        border: 0px solid rgb(160, 27, 27)
+    }
+    .mode-btn{
+        background: rgba(13, 2, 39, 0.521);
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        box-shadow: -2px -2px 5px 0px rgba(46, 1, 1, 0.349);
+        text-shadow: -2px -2px 2px rgba(46, 1, 1, 0.349);
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        margin-top: 30px;
+        margin-left: 15px;
+        color: white;
+    }
+    .body-dark .mode-btn{
+        background: rgb(238, 255, 0);
+        color: black;
+    }
+    .body-dark {
+        
+        background: linear-gradient(-15deg,rgb(15, 15, 15), rgb(70, 27, 2), rgb(59, 5, 46), rgb(36, 4, 97),rgb(15, 15, 15));
+        ;
+        background: rgb(26, 26, 26);
+        background-size: 150%;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        
+        overflow-x: hidden;
+    }
+    .body-dark .chapter {
+        background: rgba(0, 0, 0, 0.514);
+        box-shadow: 0px 0px 0px 0px rgba(17, 17, 17, 0.856);
+        text-shadow: -2px -2px 2px rgba(17, 17, 17, 0.856);
+        
+    }
+    .body-dark .tab.container {
+        background: rgba(0, 0, 0, 0.514);
+    }
+    .body-dark .menu-side{
+       background: rgb(36, 36, 36);
+    }
+    button::selection{
+        background-color: none;
+
+    }
+
+    @media only screen and (max-width: 480px),
+    only screen and (max-device-width: 480px) {
+
+
+        .title {
+            font-size: 12vw;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .container {
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        .btn-dark {
+            background: rgba(128, 255, 0, 0);
+            text-decoration: none;
+            cursor: pointer;
+            padding: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .header {
+            font-size: 4vw;
+            font-weight: 600;
+        }
+
+        .chapter {
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            margin-left: 4vw;
+            margin-right: 4vw;
+            padding: 2%;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 92vw;
+            max-height: 200px;
+            overflow: scroll;
+        }
+
+        #phy-content.container,
+        #chem-content.container,
+        #math-content.container {
+            padding: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: fit-content;
+            border-radius: 10px;
+            width: 100vw;
+        }
+
+        .sub-header {
+            text-align: center;
+            font-size: 4vw;
+            font-weight: 600;
+        }
+
+        .text {
+            text-align: left;
+            font-size: 3vw;
+            font-weight: 600;
+        }
+
+        .chapter div {
+            padding-left: 0px;
+            padding-right: 0px;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 2%;
+
+        }
+
+        .chapter div .dropdown div {
+            padding-left: 0px;
+            padding-right: 0px;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 2%;
+            box-shadow: 2px 2px 12px 2px rgb(122, 22, 22);
+            border: 0px solid rgb(160, 27, 27)
+        }
+
+        .chapter .plus-btn {
+            background: none;
+            color: whitesmoke;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255, 0)
+        }
+
+        .chapter div.drop-down {
+            height: 0;
+            background-color: rgba(0, 128, 0, 0);
+            overflow: hidden;
+            display: block;
+            transition: all 1s;
+            margin-top: 0;
+            margin-bottom: 0;
+            box-shadow: none;
+            padding: 0;
+            transition: all 1s;
+        }
+
+        .chapter div.drop-down-open {
+            height: fit-content;
+            background-color: rgba(0, 128, 0, 0);
+            overflow: hidden;
+            display: block;
+            transition: display 1s;
+            margin-top: 0;
+            margin-bottom: 0;
+            box-shadow: none;
+            padding: 0;
+            transition: all 1s;
+        }
+
+        #title {
+            text-align: left;
+            width: 95%;
+        }
+    }
+</style>
+<script>
+    var index = 0;
+    console.log("working--0...");
+    let item = [];
+    console.log("working--1...");
+    let tabs = document.querySelectorAll(".slide-btn");
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            let siblings = getsibblings(tab);
+            siblings.forEach(sib => {
+                sib.classList.remove("slide-btn-sel");
+                console.log("removing classlist...")
+                let target = sib.getAttribute("data-tab-target");
+                console.log("removetarget: " + target);
+                document.getElementById(target).classList.remove("content-enable");
+            });
+            tab.classList.add("slide-btn-sel");
+            console.log("adding classlist...");
+            let target = tab.getAttribute("data-tab-target");
+            console.log("addtarget: " + target);
+            //console.log(document.getElementById(target));
+            document.getElementById(target).classList.add("content-enable");
+        })
+    });
+
+    function getsibblings(e) {
+        let siblings = [];
+        // if no parent, return no sibling
+        if (!e.parentNode) {
+            return siblings;
+        }
+        // first child of the parent node
+        let sibling = e.parentNode.firstChild;
+        console.log("getting sibblings...")
+        // collecting siblings
+        while (sibling) {
+            if (sibling.nodeType === 1 && sibling !== e) {
+                siblings.push(sibling);
+            }
+            sibling = sibling.nextSibling;
+        }
+        return siblings;
+    };
+
+    function dropdownactive(a) {
+        console.log("click working...");
+        a.parentNode.getElementsByClassName("drop-down")[0].classList.toggle("drop-down-open");
+        if(a.parentNode.getElementsByClassName("drop-down")[0].classList.contains("drop-down-open")==true){
+            a.innerHTML="-";
+        }
+        else{
+            a.innerHTML="+";
+        }
+    }
+
+    document.querySelectorAll("[value]").forEach(element => {
+        console.log("element is= " + element.innerHTML);
+        let value = element.getAttribute("value");
+        console.log("value is=" + value);
+        element.style.backgroundPosition = value, 0;
+    })
+    document.getElementById("menu-btn").addEventListener("click", function () {
+        ("click working");
+        document.getElementById("body").classList.toggle("body-to-right");
+        document.getElementById("menu-side").classList.toggle("menu-side-to-right");
+        document.getElementById("menu-btn").classList.toggle("menu-btn-onclick");
+
+    });
+    document.querySelectorAll(".mode-btn")[0].addEventListener("click",()=>{
+        document.getElementById("body").classList.toggle("body-dark");
+        if(document.getElementById("body").classList.contains("body-dark")==true){
+        document.querySelectorAll(".mode-btn")[0].innerHTML="Light";
+        }
+        else{
+            document.querySelectorAll(".mode-btn")[0].innerHTML="Dark";
+        }
+    });
+    if(document.getElementById("body").classList.contains("body-dark")==true){
+        document.querySelectorAll(".mode-btn")[0].innerHTML="Light";
+        }
+        else{
+            document.querySelectorAll(".mode-btn")[0].innerHTML="Dark";
+        }
+    
+
+</script>
+
+
+</html>
